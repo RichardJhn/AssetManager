@@ -80,7 +80,7 @@ public class House extends Asset{
                 pricePerSquareFoot = 0;
 
         }
-        return (pricePerSquareFoot * this.squareFoot) + (this.lotSize * 0.25);
+        return (pricePerSquareFoot * this.squareFoot) + (this.lotSize * .25);
 
     }
 

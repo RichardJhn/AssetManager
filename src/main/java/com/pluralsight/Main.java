@@ -5,9 +5,12 @@ public class Main {
         Asset jewel = new Asset("June","Jewel",12000.00);
 
         ArrayList<Asset> assets = new ArrayList<>();
-        House h = new House("2010", "Mansion",1000000.00,"12321 Mcdonalds rd", 20 ,21213,130);
+        House h = new House("2010", "Mansion",1000000.00,"12321 Mcdonalds rd", 5 ,21213,13000);
+        Vehicle v = new Vehicle("2020", "Toyota", 10000.00,"Camry Sedan",5,24342);
+
         assets.add(jewel);
         assets.add(h);
+        assets.add(v);
 
 
         for(Asset a : assets){

@@ -48,7 +48,10 @@ public class Vehicle extends  Asset{
                 ", makeModel='" + makeModel + '\'' +
                 '}';
     }
-    public double getValue(double vehicleValue){
+    public double getValue(){
+        int currentYear = 2025;
+        int age = currentYear - year;
+        double value = getOriginalCost();
         List<Vehicle> vehicleList = new ArrayList<>();
         for (Vehicle vehicle : vehicleList){
             if (vehicle.year <=3){
@@ -67,7 +70,6 @@ public class Vehicle extends  Asset{
                 System.out.println("error");
             }
         }
-
-        return vehicleValue;
+        return value;
     }
 }
