@@ -2,6 +2,7 @@ package com.pluralsight;
 
 public class Asset {
     protected String dateAcquired;
+    protected String description;
     protected double originalCost;
 
     public String getDateAcquired() {
@@ -20,8 +21,20 @@ public class Asset {
         this.originalCost = originalCost;
     }
 
-    public Asset(String dateAcquired, double originalCost) {
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public Asset(String dateAcquired,String description, double originalCost) {
         this.dateAcquired = dateAcquired;
+        this.description = description;
         this.originalCost = originalCost;
+    }
+    public double getValue(){
+        return this.originalCost;
     }
 }
