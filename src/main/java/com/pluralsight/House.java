@@ -60,7 +60,7 @@ public class House extends Asset{
                 ", address='" + address + '\'' +
                 '}';
     }
-    @Override
+
     public double getValue(){
         double pricePerSquareFoot;
         switch (condition){

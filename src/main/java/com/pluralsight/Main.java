@@ -2,7 +2,6 @@ package com.pluralsight;
 import java.util.ArrayList;
 public class Main {
     public static void main(String[] args){
-        Asset jewel = new Asset("June","Jewel",12000.00);
 
         ArrayList<Asset> assets = new ArrayList<>();
         House h = new House("2010", "Mansion",1000000.00,"12321 Mcdonalds rd", 1 ,21213,13000);
@@ -10,7 +9,6 @@ public class Main {
         Vehicle v = new Vehicle("2020", "Toyota", 10000.00,"Camry Sedan",2019,24342);
         Vehicle v2 = new Vehicle("2021","Toyta",58000.00,"Supra",2018,124321);
 
-        assets.add(jewel);
         assets.add(h);
         assets.add(v);
         assets.add(h2);
